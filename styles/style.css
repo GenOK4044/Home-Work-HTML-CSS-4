@@ -1,0 +1,247 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-family: Tahoma;
+}
+	a {
+		text-decoration: none;
+	}
+	li {
+		list-style: none;
+	}
+
+	/*MAKE BACKGROUND GRADIENT-----------------------------------------------------------------------------------------*/
+
+	.background-color1 {
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		top: 0;
+		height: 30px;
+		width: 100%;
+		background-color: #128aa7;
+	}
+	.background-color2 {
+		z-index: -1;
+		position: absolute;
+		left: 0;
+		top: 30px;
+		width: 100%;
+		height: 150px;
+	    background: -webkit-linear-gradient(#14cee1 0%, #fdffff 97%, #fdffff 100%, #2989d8 100%, #fdffff 100%, #fdffff 101%);	
+	}
+	.background-color3 {
+		z-index: -1;
+		margin-bottom: -9999px;
+		padding-bottom: 9999px;
+		top: 180px;
+		width: 100%;
+		position: absolute;
+		min-height: 930px;
+        background: -webkit-linear-gradient(top,  #3fc3d1 0%,#0c739f 100%,#fdffff 100%,#2989d8 100%,#fdffff 100%,#fdffff 101%,#0c739f 101%);
+	}
+	.inner-wrapper {
+		width: 1000px;
+		background-color: white;
+		min-height: 920px;
+		left: 50%;
+		margin: 0 auto;
+		border-bottom: 2px solid black;
+		-webkit-box-shadow: 0px 10px 35px -1px rgba(0,0,0,0.75);
+	}
+
+
+	/*HEADER------------------------------------------------------------------------------------------*/
+
+
+	header {
+		width: 100%;
+	}
+		.inner-header {
+			height: 180px;
+
+		}
+			.logo {
+				height: 100%;
+				width: 50%;
+				float: left;
+			}
+				.logo img {
+					padding: 16px 0px 0px 21px;
+				}
+			.contacts {
+				width: 50%;
+				height: 50%;
+				float: left;
+				color: #41a1b9;
+			}
+				.inner-contacts {
+					padding: 11px 0px 0px 260px;
+				}
+					.inner-contacts a {
+						text-decoration: none;
+						color: #41a1b9;
+					}
+						.inner-contacts a:hover {
+							color: #1d6a7d;
+						}
+			.header-nav {
+				width: 50%;
+				height: 50%;
+				float: left;
+			}
+				.header-nav ul {
+					float: right;
+				}
+					.header-nav a {
+						color: #41a1b9;
+						text-decoration: none;
+					}
+					.header-nav a:hover {
+						color: #1d6a7d;
+					}
+						.header-nav a li {
+							float: left;
+							list-style: none;
+							padding: 9px 6px 0px 16px;
+						}
+							.header-nav a li img {
+								display: block;
+								margin: 0 auto;
+							}
+							.header-nav a li span {
+								display: block;
+								padding: 3px;
+							}
+			
+
+
+
+
+	/*NAVIGATION----------------------------------------------------------------------------------------*/
+
+
+
+	nav {
+		width: 100%;
+	}
+		.inner-nav {
+			height: 270px;
+		}
+			.inner-nav img {
+				display: block;
+			}
+			.nav-menu-wrapper {
+				width: 1000px;
+				border-bottom: 2px solid; 
+			}
+				.nav-menu li {
+					float: left;
+					width: 141px;
+					text-align: center;
+				}
+				#more-with {
+					width: 154px;
+				}
+					.nav-menu a {
+						display: block;
+						background-color: #343434;
+						padding: 10px;
+						color: white;
+					}
+						.nav-menu a:hover {
+							color: #a29e9e;
+						}
+				.nav-after {
+					position: relative;
+				}
+					.nav-after:hover .inner-nav-menu {
+						display: block;
+					}
+					.nav-after:after {
+						content: '';
+						position: absolute;
+						top: 19px;
+						right: 6px;
+						border: 5px solid;
+						border-color: #dfffff transparent transparent transparent;  
+						transition: 0.5s all;
+					}
+						.nav-after:hover::after {
+							transform: scaleY(-1);
+						}
+				.inner-nav-menu {
+					display: none;
+					position: absolute;
+					top: 38px;
+					left: 0;
+				}
+					.inner-nav-menu li {
+						float: none;
+					}
+					
+
+
+
+	/*CONTENT-------------------------------------------------------------------------------------------*/
+
+
+
+	.container {
+		width: 100%;
+		clear: both;
+		overflow: hidden;
+	}
+		.inner-container {
+			min-height: 600px;
+		}
+		.sidebar {
+			width: 20%;
+			float: left;
+		}
+			.inner-sidebar {
+				height: 100%;
+				margin-top: 5px;
+				background-color: #edeef0;
+				margin-bottom: -9999px;
+				padding-bottom: 9999px;
+			}
+				.inner-sidebar p {
+					padding: 10px;
+				}
+		.content {
+			width: 60%;
+			float: left;
+		}
+			.inner-content {
+				height: 100%;
+				margin-bottom: -9999px;
+				padding-bottom: 9999px;
+				border-left: 1px solid #c7cacf;
+				border-right: 1px solid #c7cacf;
+			}
+			.inner-content p {
+				padding: 10px;
+			}
+
+
+	/*FOOTER----------------------------------------------------------------------------------------------*/
+
+
+
+	footer {
+		width: 100%;
+		height: 58px;
+		text-align: center;
+	}
+		footer a {
+			color: #dee7ee;
+			line-height: 58px;
+		}
